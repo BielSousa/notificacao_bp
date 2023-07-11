@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script src="{{url_for('notificacoes.static', filename='js/notificacao.js')}}"></script>
+        <h1> Simulação abertura de demanda</h1>
+        <br><button onclick="send_request_GET('/notificacoes/notificar_demanda/', success_function=success_request, fail_function=error_request)"> Abrir demanda</button>
+        <br><button onclick="send_request_GET('/notificacoes/notificar_solicitacao_acesso_card/', success_function=success_request, fail_function=error_request)"> Solicitar acesso card</button>
+        <br><div id="card"></div>
+     </body>
+</html>
